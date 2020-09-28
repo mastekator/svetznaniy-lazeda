@@ -629,6 +629,11 @@ a.text-danger:focus, a.text-danger:hover {
     color: #fff;
     position: relative;
     z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-category .product-category-thumbnail {
@@ -17383,7 +17388,9 @@ form.track_order input[type=text]:hover {
     font-size: 20px;
     letter-spacing: .03em;
     line-height: 1.5;
-    margin: 0
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .category-grid-item .woocommerce-loop-category__title a {
