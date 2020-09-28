@@ -604,21 +604,47 @@ a.text-danger:focus, a.text-danger:hover {
     right: 0
 }
 
+.product-category .product-category-content {
+    width: 100%;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    bottom: 0 !important;
+    margin: auto;
+    top: 0;
+}
+
+.product-category {
+    cursor: pointer;
+}
+
+.product-category:hover .product-category-thumbnail:before {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.product-category .product-category-content a {
+    font-size: 28px;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
 .product-category .product-category-thumbnail {
     padding-bottom: 0 !important;
 }
 
 .product-category .product-category-thumbnail:before {
     content: '';
+    transition: 0.5s all;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 2;
     height: 100%;
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    background: rgba(0, 0, 0, 0.40);
 }
 
 #customer_login .wc-social-login a.ywsl-social img, #page-container, #page-container:after, #woo-quick-view .quick-view-carousel, .add-to-cart-btn, .alt-button.lezada-button, .alt.lezada-button, .block-list li > img, .button-video img, .categories-row.categories-carousel, .category-grid-item .product-category-content, .category-grid-item .product-category-content .category-link:after, .category-grid-item img, .category-grid-item mark, .eb-scrollbarcnt .thumb, .eb-scrollbarcnt .track, .error404 .area-404__content-heading .button, .error404 .area-404__content-heading .button:after, .header-minicart .widget_shopping_cart .widget_minicart_title .undo, .header-wishlist .widget_wishlist_title .undo, .header-wishlist .wishlist_item, .image-lightbox-gallery-item.hover-black-overlay:before, .image-lightbox-gallery-item.hover-border-zoom .banner-link:after, .image-lightbox-gallery-item.hover-white-overlay:before, .image-lightbox-gallery-item img, .isw-swatches .isw-term, .lezada-banner2 .banner-button.link:after, .lezada-banner2.hover-black-overlay:before, .lezada-banner2.hover-white-overlay:before, .lezada-banner3 .banner-button.link:after, .lezada-banner3 .banner-content, .lezada-banner3.hover-black-overlay:before, .lezada-banner3.hover-white-overlay:before, .lezada-banner4 .banner-button.link:after, .lezada-banner4 .banner-content, .lezada-banner-grid-5, .lezada-banner-grid-6, .lezada-banner-grid-6v2, .lezada-banner .banner-button.link:after, .lezada-banner.hover-black-overlay:before, .lezada-banner.hover-border-zoom .banner-link:after, .lezada-banner.hover-white-overlay:before, .lezada-blog .post-item, .lezada-brands-carousel, .lezada-brands-carousel .tm-carousel-item img, .lezada-button, .lezada-countdown, .lezada-image-carousel, .lezada-image-carousel .tm-carousel-item img, .lezada-instagram--carousel .tm-instagram-pics, .lezada-loadmore-wrap .lezada-loadmore-btn, .lezada-pagination ul li a:after, .lezada-product-carousel .products, .lezada-product-categories.categories-item-black-overlay .category-grid-item .product-category-content, .lezada-product-categories.categories-item-black-overlay .category-grid-item .product-category-thumbnail:after, .lezada-product-categories.categories-item-black-overlay .category-grid-item h2:after, .lezada-product-categories.categories-layout-carousel, .lezada-product-categories.categories-layout-carousel.categories-item-bottom-content .product-category-thumbnail, .lezada-product-categories.categories-layout-default.categories-item-bottom-content .product-category-thumbnail, .lezada-product-category-banner .button-view, .lezada-product-category-banner .category-name, .lezada-product-category-banner.hover-black-overlay:before, .lezada-product-category-banner.hover-white-overlay:before, .lezada-product-category-banner .image:after, .lezada-product-category-banner .product-count, .lezada-product .background-overlay, .lezada-product .button, .lezada-simple-banner.hover-black-overlay:before, .lezada-simple-banner.hover-border-zoom:after, .lezada-simple-banner.hover-white-overlay:before, .lezada-simple-banner.style-text.has-border > a, .lezada-simple-banner img, .lezada-social .social-links li i, .mabel-siwc-img-wrapper .mb-siwc-tag, .masonry-container, .nice-select .current, .nice-select .option, .nice-select:after, .offcanvas-sidebar, .page-id-1533 .menu-item-4268 a .menu-item-text, .page-id-1533 .menu-item-4268:hover .menu-item-text, .product-instagram .tm-instagram-pics .item-info span, .product-instagram .tm-instagram-pics .item-info span:before, .product-loop .hover-image, .product-loop .product-buttons > div, .product-loop .product-info .product-title, .product-loop.product-style--button-hover-alt .product-info, .product-loop.product-style--default .product-info:hover .isw-swatches.isw-swatches--in-loop, .product-loop .thumb-image, .product-loop .yith-wcwl-add-to-wishlist, .readmore-button, .readmore-button:before, .related.slick-slider .products, .reset_variations, .search-form-wrapper .btn-search-close, .search-form-wrapper .btn-search-close:hover, .search-form-wrapper .search-results-wrapper .autocomplete-suggestion, .select2-dropdown .select2-results__option, .shop-toolbar .filter-button .open-filters:before, .single-nav__next-item .item-wrapper, .single-nav__prev-item .item-wrapper, .site-footer .mc4wp-form .lezada-button, .site-footer .mc4wp-form .lezada-button[type=submit]:before, .site-footer .mc4wp-form button, .site-footer .mc4wp-form button[type=submit]:before, .site-footer .mc4wp-form input[type=email], .site-footer .mc4wp-form input[type=submit]:before, .site-header .left-col .switcher-menu .menu li .sub-menu, .site-header .left-col .switcher-menu .menu li .sub-menu > li, .site-menu .menu-item-tag, .site-menu .menu-item-tag:after, .site-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after, .site-menu .menu > ul > li .children li.page_item.menu-item-has-children:after, .site-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .site-mobile-menu .menu-item-tag, .site-mobile-menu .menu-item-tag:after, .site-mobile-menu .menu > li .sub-menu, .site-mobile-menu .menu > ul > li .children, .slick-arrow.lezada-button:before, .slick-dots li, .slick-dots li .lezada-button, .slick-dots li button, .social-links li i, .sticky-header:after, .thumbnails-slider .slick-slide img, .tm-instagram-pics .item-info, .tm-instagram-pics .item .overlay, .tm-instagram-pics .item .play-button, .topbar, .topbar-open-btn, .topbar .menu li .sub-menu li, .tp-bullets.custom .tp-bullet, .up-sells.slick-slider .products, .vc_row.blog-vc img, .vc_row.brands-row img, .vc_row.lp-homepage .vc_single_image-wrapper.vc_box_border_grey, .vc_row.lp-homepage .vc_single_image-wrapper.vc_box_border_grey:before, .vc_row.lp-homepage img, .wb-allview-formcnt.wb-multi-filter-lezada label.pw_brand_category_filter_checkbox:after, .wb-allview.wb-allview-lezada .wb-allview-item-cnt img, .widget_categories .count, .widget_layered_nav li .count, .widget_product_categories i, .widget_product_categories span.count, .widget_product_search .lezada-button:after, .widget_product_search button:after, .widget_product_search input, .widget_search .lezada-button:after, .widget_search button:after, .widget_search input, .widget_shopping_cart .mini_cart_item, .widget_tm_layered_nav ul .count, .widget_tm_layered_nav ul li.swatch-color .filter-swatch, .widget_tm_layered_nav ul li.swatch-image img, .woocommerce-checkout .showcoupon, .woocommerce-checkout .showcoupon:after, .woocommerce-checkout .showlogin, .woocommerce-checkout .showlogin:after, .woocommerce-pagination ul li a:after, .woocommerce-password-hint, .woocommerce .quantity.lezada_qty .minus, .woocommerce .quantity.lezada_qty .plus, .woocommerce.single-product .product .product-tabs-wrapper .wc-tabs li, .woocommerce.single-product .product .summary .compare-btn a, .wpb-js-composer .vc_toggle.vc_toggle_lezada.vc_toggle_lezada .vc_toggle_title, .wpb-js-composer .vc_tta-accordion.vc_tta-style-lezada.vc_tta-style-lezada .vc_tta-panel .vc_tta-panel-heading, .wpb-js-composer .vc_tta-tabs.vc_tta-style-lezada.vc_tta-style-lezada .vc_tta-panel, .wpb-js-composer .vc_tta-tabs.vc_tta-style-lezada.vc_tta-style-lezada .vc_tta-panel .vc_tta-panel-title > a, .wpb-js-composer .vc_tta-tabs.vc_tta-style-lezada.vc_tta-style-lezada .vc_tta-tab > a, a, a.button, a.button.alt, a.button.alt-button, button, button.alt, button.alt-button, button.slick-arrow:before, input.alt-button[type=button], input.alt-button[type=submit], input.alt[type=button], input.alt[type=submit], input[type=button], input[type=email], input[type=number], input[type=password], input[type=search], input[type=submit], input[type=tel], input[type=text], textarea, ul.product-categories-menu li.cat-item > a:after {
