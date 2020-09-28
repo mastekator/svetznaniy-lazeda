@@ -36,7 +36,7 @@ global $product;
 
 	<?php endif; ?>
 
-	<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<tr class="posted_in"><td class="label">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'lezada' ) . '</td><td class="value"> ', '</td></tr>' ); ?>
+	<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<tr class="posted_in"><td class="label">' . _n( pll__('Category:'), pll__('Categories:'), count( $product->get_category_ids() ), 'lezada' ) . '</td><td class="value"> ', '</td></tr>' ); ?>
 
 	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<tr class="tagged_as">' . '<td class="label">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'lezada' ) . '</td><td class="value"> ', '</td></tr>' ); ?>
 

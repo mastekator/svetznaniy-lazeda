@@ -32,7 +32,7 @@ foreach ( $product_share_links as $link ) {
 <?php if ( $product_show_share && ! $no_share_links ) { ?>
 	<table class="product-share">
 		<tr>
-			<td class="label"><?php echo esc_html__( 'Share on:', 'lezada' ); ?></td>
+			<td class="label"><?php pll_e( 'Share on:' ); ?></td>
 			<td class="value">
 				<ul class="list-inline share-list">
 					<?php do_action( 'lezada_before_product_share' ); ?>

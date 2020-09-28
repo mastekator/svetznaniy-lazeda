@@ -343,7 +343,7 @@ if ( ! class_exists( 'Lezada_Woo' ) ) {
 		}
 
 		function add_label_qty() {
-			echo '<div class="qty">' . esc_html__( 'Quantity', 'lezada' ) . '</div>';
+			echo '<div class="qty">' . pll_e( 'Quantity' ) . '</div>';
 		}
 
 		/**
