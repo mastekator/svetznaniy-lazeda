@@ -1500,7 +1500,7 @@ if ( ! class_exists( 'Lezada_Templates' ) ) {
 									<span class="page-subtitle"><?php echo '' . $sub_title ?></span>
 								<?php endif; ?>
 								<div class="site-breadcrumbs">
-									<?php echo self::breadcrumbs(); ?>
+									<?php echo self::breadcrumbs(['home_label' => pll__('Home')]); ?>
 								</div>
 							</div>
 						</div>

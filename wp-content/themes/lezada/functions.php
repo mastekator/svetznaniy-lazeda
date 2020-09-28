@@ -81,6 +81,8 @@ if ( function_exists('pll_languages_list') ) {
 }
 
 add_action('init', function() {
+    pll_register_string('breadcrumb-home', 'Home');
+
     pll_register_string('cart-product', 'Product');
     pll_register_string('cart-price', 'Price');
     pll_register_string('cart-quantity', 'Quantity');
