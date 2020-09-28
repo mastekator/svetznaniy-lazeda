@@ -1237,10 +1237,10 @@ if ( ! class_exists( 'Lezada_Templates' ) ) {
 				$classes[] = ' ajax-search-form';
 			}
 
-			$place_holder = esc_html__( 'Search Products...', 'lezada' );
+			$place_holder = pll__( 'Search Products...' );
 
 			if ( $post_type == 'post' ) {
-				$place_holder = esc_html__( 'Search Posts...', 'lezada' );
+				$place_holder = pll__( 'Search Posts...' );
 			}
 
 			?>
@@ -1252,7 +1252,7 @@ if ( ! class_exists( 'Lezada_Templates' ) ) {
 					<input type="hidden" name="post_type" value="<?php echo esc_attr( $post_type ); ?>"/>
 					<?php if ( $categories_on ) {
 						$args = array(
-							'show_option_all' => esc_html__( 'All Categories', 'lezada' ),
+							'show_option_all' => pll__( 'All Categories' ),
 							'hierarchical'    => 1,
 							'class'           => 'search-select',
 							'echo'            => 1,
@@ -1279,10 +1279,10 @@ if ( ! class_exists( 'Lezada_Templates' ) ) {
 							'lezada' ); ?></button>
 				</form>
 				<p class="search-description">
-					<span><?php echo sprintf( esc_html__( '# Type at least %s %s to search', 'lezada' ),
+					<span><?php echo sprintf( pll__( '# Type at least %s %s to search' ),
 							$min_chars,
-							_n( 'character', 'characters', $min_chars, 'lezada' ) ); ?></span>
-					<span><?php esc_html_e( '# Hit enter to search or ESC to close', 'lezada' ); ?></span>
+							_n( pll__('character'), pll__('characters'), $min_chars, 'lezada' ) ); ?></span>
+					<span><?php pll_e( '# Hit enter to search or ESC to close' ); ?></span>
 				</p>
 				<div class="search-results-wrapper">
 					<p class="ajax-search-notice"></p>

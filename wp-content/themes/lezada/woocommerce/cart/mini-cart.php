@@ -28,11 +28,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php if ( lezada_get_option( 'minicart_message_pos' ) == 'top' && ! WC()->cart->is_empty() ) { ?>
 	<p class="minicart-message"><?php echo lezada_get_option( 'minicart_message' ) ?></p>
 <?php } ?>
-<p class="widget_minicart_title"><?php esc_html_e( 'Cart', 'lezada' ); ?>
+<p class="widget_minicart_title"><?php pll_e( 'Cart' ); ?>
 	<a href="#" class="close-btn">&times;</a>
 	<span class="undo">
-						<?php esc_html_e( 'Item removed.', 'lezada' ) ?>
-		<a href="#"><?php esc_html_e( 'Undo', 'lezada' ); ?></a>
+						<?php pll_e( 'Item removed.' ) ?>
+		<a href="#"><?php pll_e( 'Undo' ); ?></a>
 					</span>
 </p>
 <ul class="woocommerce-mini-cart cart_list product_list_widget <?php echo esc_attr( $args['list_class'] ); ?>">
@@ -82,7 +82,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					echo apply_filters( 'woocommerce_cart_item_remove_link',
 						sprintf( '<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s" data-cart_item_key="%s" >&times;</a>',
 							esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-							esc_html__( 'Remove this item', 'lezada' ),
+                            pll__( 'Remove this item' ),
 							esc_attr( $product_id ),
 							esc_attr( $_product->get_sku() ),
 							esc_attr( $cart_item_key ) ),
@@ -136,16 +136,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
 
-	<p class="woocommerce-mini-cart__total total"><strong><?php esc_html_e( 'Subtotal', 'lezada' ); ?>
+	<p class="woocommerce-mini-cart__total total"><strong><?php pll_e( 'Subtotal' ); ?>
 			:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 
 	<p class="woocommerce-mini-cart__buttons buttons">
 		<a href="<?php echo esc_url( wc_get_cart_url() ); ?>"
-		   class="button wc-forward"><?php esc_html_e( 'View Cart', 'lezada' ); ?></a>
+		   class="button wc-forward"><?php pll_e( 'View Cart' ); ?></a>
 		<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>"
-		   class="button checkout alt-button wc-forward"><?php esc_html_e( 'Checkout', 'lezada' ); ?></a>
+		   class="button checkout alt-button wc-forward"><?php pll_e( 'Checkout' ); ?></a>
 	</p>
 
 <?php endif; ?>

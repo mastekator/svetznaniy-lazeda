@@ -65,7 +65,7 @@ Redux::setSection( Lezada_Redux::$opt_name,
 				'args'     => array(
 					'textarea_rows' => 3,
 				),
-				'default'  => 'Order Online Call Us <a href="tel:0123456789">(0123) 456789</a>',
+				'default'  =>  pll__('Order Online Call Us') . '<a href="tel:0123456789">(0123) 456789</a>',
 			),
 			array(
 				'id'            => 'topbar_height',

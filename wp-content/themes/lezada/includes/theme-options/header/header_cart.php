@@ -22,7 +22,7 @@ Redux::setSection( Lezada_Redux::$opt_name,
 				'type'     => 'textarea',
 				'title'    => esc_html__( 'Shopping Cart Message', 'lezada' ),
 				'subtitle' => esc_html__( 'Insert the text you want to see in the shopping cart here.', 'lezada' ),
-				'default'  => __( 'Free Shipping on All Orders Over $100!', 'lezada' ),
+				'default'  => pll__( 'Free Shipping on All Orders Over $100!' ),
 			),
 			array(
 				'id'       => 'minicart_message_pos',

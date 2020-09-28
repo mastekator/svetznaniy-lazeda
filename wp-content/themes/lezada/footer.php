@@ -38,6 +38,7 @@ $layout = explode( '_', lezada_get_option( 'footer_layout' ) );
 	<div id="footer" class="site-footer site-footer--<?php echo esc_attr( $footer_color_scheme ); ?> ">
 		<div class="container<?php echo '' . ( $footer_width == 'wide' ) ? ' wide' : ''; ?>">
 			<div class="row">
+
 				<?php
 
 				$columns = $layout[0];

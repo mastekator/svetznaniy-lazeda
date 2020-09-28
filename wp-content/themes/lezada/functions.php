@@ -80,3 +80,32 @@ if ( function_exists('pll_languages_list') ) {
 	do_action('wpml_loaded');
 }
 
+add_action('init', function() {
+    pll_register_string('cart-product', 'Product');
+    pll_register_string('cart-price', 'Price');
+    pll_register_string('cart-quantity', 'Quantity');
+    pll_register_string('cart-total', 'Total');
+    pll_register_string('cart-coupon', 'Coupon:');
+    pll_register_string('cart-enter-coupon', 'Enter your coupon code');
+    pll_register_string('cart-apply-coupon', 'Apply Coupon');
+    pll_register_string('cart-update', 'Update Cart');
+
+    pll_register_string('search-categories', 'All Categories');
+    pll_register_string('search-type', '# Type at least %s %s to search');
+    pll_register_string('search-esc', '# Hit enter to search or ESC to close');
+    pll_register_string('search-products', 'Search Products...');
+    pll_register_string('search-posts', 'Search Posts...');
+    pll_register_string('search-character', 'character');
+    pll_register_string('search-characters', 'characters');
+    pll_register_string('search-empty-search', 'Sorry, but nothing matched your search terms. Please try again with different keywords');
+
+    pll_register_string('widget-checkout', 'Checkout');
+    pll_register_string('widget-view-cart', 'View Cart');
+    pll_register_string('widget-subtotal', 'Subtotal');
+    pll_register_string('widget-remove', 'Remove this item');
+    pll_register_string('widget-undo', 'Undo');
+    pll_register_string('widget-removed', 'Item removed.');
+    pll_register_string('widget-cart', 'Cart');
+    pll_register_string('header-order-online', 'Order Online Call Us');
+});
+
