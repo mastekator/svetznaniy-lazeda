@@ -75,13 +75,24 @@ if ( ! function_exists( 'lezada_get_option' ) ) {
 
 
 // only run if Polylang is loaded
-if ( function_exists('pll_languages_list') ) { 
+if ( function_exists('pll_languages_list') ) {
 	add_action('wpml_loaded', '__return_true', 10, 0);
 	do_action('wpml_loaded');
 }
 
 add_action('init', function() {
     pll_register_string('breadcrumb-home', 'Home');
+
+    pll_register_string('lk-login', 'Login');
+    pll_register_string('lk-gthyb', 'Great to have you back!');
+    pll_register_string('lk-username-or-email', 'Username or email address');
+    pll_register_string('lk-password', 'Password');
+    pll_register_string('lk-remember', 'Remember me');
+    pll_register_string('lk-lost-password', 'Lost your password?');
+    pll_register_string('lk-register', 'Register');
+    pll_register_string('lk-no-account', 'If you don’t have an account, register now!');
+    pll_register_string('lk-username', 'Username');
+    pll_register_string('lk-email', 'Email address');
 
     pll_register_string('product-quantity', 'Quantity');
     pll_register_string('product-category', 'Category:');

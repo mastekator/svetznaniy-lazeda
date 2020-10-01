@@ -5,7 +5,7 @@ Theme URI: https://lezadaa.thememove.com/
 Author: ThemeMove
 Author URI: http://thememove.com
 Description: Minimal & Creative Woocommerce WordPress Theme
-Version: 2.3.1
+Version: 2.3.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: lezada
@@ -613,6 +613,10 @@ a.text-danger:focus, a.text-danger:hover {
     bottom: 0 !important;
     margin: auto;
     top: 0;
+}
+
+.topbar .topbar-text {
+    display: none;
 }
 
 .product-category {
