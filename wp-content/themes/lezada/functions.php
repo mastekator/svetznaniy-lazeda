@@ -128,7 +128,6 @@ add_action('init', function () {
 
     pll_register_string('search-mobile', 'Search');
     pll_register_string('search-mobile-dots', 'Search...');
-    pll_register_string('search-mobile-hellip', 'Search&hellip;');
 
     pll_register_string('widget-checkout', 'Checkout');
     pll_register_string('widget-view-cart', 'View Cart');
