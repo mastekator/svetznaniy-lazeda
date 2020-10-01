@@ -46148,14 +46148,9 @@ body.no-redux ul.wp-tag-cloud a {
 }
 
 @media (max-width: 768px) {
-    .topbar-left .switcher.language-switcher.polylang-switcher {
+    .topbar-left .switcher.language-switcher.polylang-switcher, .topbar-left .switcher.currency-switcher.woocs-switcher {
         float: left;
         display: block;
-    }
-
-    .topbar-left .switcher.currency-switcher.woocs-switcher {
-        display: block;
-
     }
 
     .logo-mobile {
