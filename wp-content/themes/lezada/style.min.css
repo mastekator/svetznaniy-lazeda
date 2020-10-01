@@ -46153,8 +46153,9 @@ body.no-redux ul.wp-tag-cloud a {
         display: block;
     }
 
-    .topbar .switcher {
+    .topbar-left .switcher.currency-switcher.woocs-switcher {
         display: block;
+
     }
 
     .logo-mobile {
