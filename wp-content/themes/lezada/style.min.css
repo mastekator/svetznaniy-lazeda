@@ -46152,11 +46152,21 @@ body.no-redux ul.wp-tag-cloud a {
     max-width: 100%;
 }
 
+.footer-column .widget > div {
+    height: 100%;
+}
+
+.widget li:first-of-type {
+    padding-top: 10px;
+}
+
 .footer-column .menu {
     display: flex;
     flex-direction: row;
+    height: 100%;
+    margin: auto;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
