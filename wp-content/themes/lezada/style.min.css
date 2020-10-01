@@ -46160,11 +46160,24 @@ body.no-redux ul.wp-tag-cloud a {
     padding-top: 10px;
 }
 
+.widget li {
+    padding: 10px;
+}
+
+
+.widget .social-links{
+    display: flex;
+    justify-content: center;
+}
+
+.widget_tm_social .widget-title {
+    display: none;
+}
+
 .footer-column .menu {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    margin: auto;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
