@@ -46147,9 +46147,16 @@ body.no-redux ul.wp-tag-cloud a {
     }
 }
 
-.footer-column .widget{
+.footer-column .widget {
     flex: 0 0 100%;
     max-width: 100%;
+}
+
+.footer-column .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 @media (max-width: 768px) {
