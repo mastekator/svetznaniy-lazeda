@@ -897,7 +897,7 @@ if ( ! class_exists( 'Lezada_Templates' ) ) {
 				<form role="search" method="get" id="mobile-searchform"
 				      action="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<input type="text" value="" name="s"
-					       placeholder="<?php pll_e( 'Search&hellip;' ); ?>"/>
+					       placeholder="<?php pll_e( 'Search...' ); ?>"/>
 					<input type="hidden" name="post_type"
 					       value="<?php echo esc_attr( lezada_get_option( 'search_post_type' ) ); ?>"/>
 					<button type="submit" class="search-submit"><?php pll_e( 'Search' ); ?></button>
