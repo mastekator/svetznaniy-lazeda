@@ -126,6 +126,9 @@ add_action('init', function () {
     pll_register_string('search-characters', 'characters');
     pll_register_string('search-empty-search', 'Sorry, but nothing matched your search terms. Please try again with different keywords');
 
+    pll_register_string('search-mobile', 'Search');
+    pll_register_string('search-mobile-hellip', 'Search&hellip;');
+
     pll_register_string('widget-checkout', 'Checkout');
     pll_register_string('widget-view-cart', 'View Cart');
     pll_register_string('widget-subtotal', 'Subtotal');
@@ -134,5 +137,10 @@ add_action('init', function () {
     pll_register_string('widget-removed', 'Item removed.');
     pll_register_string('widget-cart', 'Cart');
     pll_register_string('header-order-online', 'Order Online Call Us');
+
+    pll_register_string('error-oops', 'Oops!');
+    pll_register_string('error-not-found', 'Page not found!');
+    pll_register_string('error-go-back', 'please go back to ');
+    pll_register_string('error-homepage', 'Homepage');
 });
 

@@ -897,10 +897,10 @@ if ( ! class_exists( 'Lezada_Templates' ) ) {
 				<form role="search" method="get" id="mobile-searchform"
 				      action="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<input type="text" value="" name="s"
-					       placeholder="<?php esc_html_e( 'Search&hellip;', 'lezada' ); ?>"/>
+					       placeholder="<?php pll_e( 'Search&hellip;' ); ?>"/>
 					<input type="hidden" name="post_type"
 					       value="<?php echo esc_attr( lezada_get_option( 'search_post_type' ) ); ?>"/>
-					<button type="submit" class="search-submit"><?php esc_html_e( 'Search', 'lezada' ); ?></button>
+					<button type="submit" class="search-submit"><?php pll_e( 'Search' ); ?></button>
 				</form>
 
 				<?php
@@ -937,7 +937,7 @@ if ( ! class_exists( 'Lezada_Templates' ) ) {
 			?>
 
 			<a href="#" class="back-to-top"><i
-					class="ion-ios-arrow-thin-up"></i><span><?php esc_html_e( 'Back to top', 'lezada' ); ?></span></a>
+					class="ion-ios-arrow-thin-up"></i><span><?php pll_e( 'Back to top' ); ?></span></a>
 			<?php
 
 			return ob_get_clean();
