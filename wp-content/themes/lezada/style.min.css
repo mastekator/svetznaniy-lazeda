@@ -46154,8 +46154,7 @@ body.no-redux ul.wp-tag-cloud a {
 
 .footer-column .widget_text{
     max-width: 450px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin: auto !important;
 }
 
 .footer-column .widget > div {
