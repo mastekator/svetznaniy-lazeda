@@ -46152,6 +46152,12 @@ body.no-redux ul.wp-tag-cloud a {
     max-width: 100%;
 }
 
+.footer-column .widget_text{
+    max-width: 450px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .footer-column .widget > div {
     height: 100%;
 }
