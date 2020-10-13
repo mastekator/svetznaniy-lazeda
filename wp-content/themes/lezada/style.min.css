@@ -46152,6 +46152,16 @@ body.no-redux ul.wp-tag-cloud a {
     max-width: 100%;
 }
 
+.category-grid-item .product-category-thumbnail, .product-category .product-category-content{
+    max-height: 320px;
+    height: 320px;
+}
+
+.category-grid-item .product-category-thumbnail img{
+    height: 320px;
+    object-fit: cover;
+}
+
 .footer-column .widget_text{
     max-width: 450px !important;
     margin: auto !important;
