@@ -34,12 +34,12 @@ if (!defined('ABSPATH')) {
 
         <?php endif; ?>
 
-        <h2><?php pll_e('Login'); ?></h2>
-
-        <p class="description"><?php pll_e('Great to have you back!') ?></p>
-
         <div class="row">
             <div class="col-lg-6 col-12 offset-lg-3 offset-0">
+                <h2><?php pll_e('Login'); ?></h2>
+
+                <p class="description"><?php pll_e('Great to have you back!') ?></p>
+
                 <form class="woocommerce-form woocommerce-form-login login" method="post">
 
                     <?php do_action('woocommerce_login_form_start'); ?>
@@ -82,57 +82,61 @@ if (!defined('ABSPATH')) {
     </div>
 
     <div class="u-column2 col-2">
+        <div class="row">
+            <div class="col-lg-6 col-12 offset-lg-3 offset-0">
+                <h2><?php pll_e('Register'); ?></h2>
 
-        <h2><?php pll_e('Register'); ?></h2>
+                <p class="description"><?php pll_e('If you don’t have an account, register now!'); ?></p>
 
-        <p class="description"><?php pll_e('If you don’t have an account, register now!'); ?></p>
+                <form method="post" class="register">
 
-        <div class="col-lg-6 col-12 offset-lg-3 offset-0">
-            <form method="post" class="register">
+                    <?php do_action('woocommerce_register_form_start'); ?>
 
-                <?php do_action('woocommerce_register_form_start'); ?>
+                    <?php if ('no' === get_option('woocommerce_registration_generate_username')) : ?>
 
-                <?php if ('no' === get_option('woocommerce_registration_generate_username')) : ?>
+                        <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                            <label for="reg_username"><?php pll_e('Username'); ?> <span
+                                        class="required">*</span></label>
+                            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text"
+                                   name="username"
+                                   id="reg_username"
+                                   value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
+                        </p>
 
-                    <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                        <label for="reg_username"><?php pll_e('Username'); ?> <span class="required">*</span></label>
-                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username"
-                               id="reg_username"
-                               value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
-                    </p>
-
-                <?php endif; ?>
-
-                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                    <label for="reg_email"><?php pll_e('Email address'); ?> <span
-                                class="required">*</span></label>
-                    <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email"
-                           id="reg_email"
-                           value="<?php echo (!empty($_POST['email'])) ? esc_attr(wp_unslash($_POST['email'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
-                </p>
-
-                <?php if ('no' === get_option('woocommerce_registration_generate_password')) : ?>
+                    <?php endif; ?>
 
                     <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                        <label for="reg_password"><?php pll_e('Password'); ?> <span class="required">*</span></label>
-                        <input type="password" class="woocommerce-Input woocommerce-Input--text input-text"
-                               name="password"
-                               id="reg_password"/>
+                        <label for="reg_email"><?php pll_e('Email address'); ?> <span
+                                    class="required">*</span></label>
+                        <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email"
+                               id="reg_email"
+                               value="<?php echo (!empty($_POST['email'])) ? esc_attr(wp_unslash($_POST['email'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
                     </p>
 
-                <?php endif; ?>
+                    <?php if ('no' === get_option('woocommerce_registration_generate_password')) : ?>
 
-                <?php do_action('woocommerce_register_form'); ?>
+                        <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                            <label for="reg_password"><?php pll_e('Password'); ?> <span
+                                        class="required">*</span></label>
+                            <input type="password" class="woocommerce-Input woocommerce-Input--text input-text"
+                                   name="password"
+                                   id="reg_password"/>
+                        </p>
 
-                <p class="woocommerce-FormRow form-row button-register">
-                    <?php wp_nonce_field('woocommerce-register', 'woocommerce-register-nonce'); ?>
-                    <button type="submit" class="woocommerce-Button button" name="register"
-                            value="<?php esc_attr_e('Register', 'lezada'); ?>"><?php pll_e('Register'); ?></button>
-                </p>
+                    <?php endif; ?>
 
-                <?php do_action('woocommerce_register_form_end'); ?>
+                    <?php do_action('woocommerce_register_form'); ?>
 
-            </form>
+                    <p class="woocommerce-FormRow form-row button-register">
+                        <?php wp_nonce_field('woocommerce-register', 'woocommerce-register-nonce'); ?>
+                        <button type="submit" class="woocommerce-Button button" name="register"
+                                value="<?php esc_attr_e('Register', 'lezada'); ?>"><?php pll_e('Register'); ?></button>
+                    </p>
+
+                    <?php do_action('woocommerce_register_form_end'); ?>
+
+                </form>
+            </div>
         </div>
     </div>
 
