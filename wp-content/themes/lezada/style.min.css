@@ -46157,6 +46157,10 @@ body.no-redux ul.wp-tag-cloud a {
     height: 320px;
 }
 
+.products{
+    margin-bottom: 60px;
+}
+
 .category-grid-item .product-category-thumbnail img{
     height: 320px;
     object-fit: cover;
