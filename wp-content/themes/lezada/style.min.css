@@ -37086,9 +37086,7 @@ body.no-redux ul.wp-tag-cloud a {
     }
 
     .woocommerce-checkout form.woocommerce-checkout .col2-set .col-1, .woocommerce-checkout form.woocommerce-checkout .col2-set .col-2 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%
+        margin: auto;
     }
 
     .product-loop .product-buttons > div {
